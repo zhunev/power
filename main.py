@@ -33,3 +33,4 @@ for i in range(len(df)):
     else:
         power = (df.loc[i, "r"] - distance)**2
         print("\nBest link station for point x,y is x,y with power z: ", power)
+#note has been inserted
