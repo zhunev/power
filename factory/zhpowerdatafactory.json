@@ -1,0 +1,9 @@
+{
+	"name": "zhpowerdatafactory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fff80aeb-5141-4a8f-8ad5-672a14025580",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"name": "PowerTabel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "outputSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "x1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "y1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "r",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "x2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "y2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "distance",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "p",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "distance_reach",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Power"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

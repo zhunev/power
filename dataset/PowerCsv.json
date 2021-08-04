@@ -1,0 +1,57 @@
+{
+	"name": "PowerCsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "power.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "x1",
+				"type": "String"
+			},
+			{
+				"name": "y1",
+				"type": "String"
+			},
+			{
+				"name": "r",
+				"type": "String"
+			},
+			{
+				"name": "x2",
+				"type": "String"
+			},
+			{
+				"name": "y2",
+				"type": "String"
+			},
+			{
+				"name": "distance",
+				"type": "String"
+			},
+			{
+				"name": "power",
+				"type": "String"
+			},
+			{
+				"name": "distance > reach",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
